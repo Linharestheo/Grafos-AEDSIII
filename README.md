@@ -50,16 +50,6 @@ g++ -o main grafo.cpp main.cpp
 
 ---
 
-## 📁 Estrutura do projeto
-.
-├── arq.txt # Arquivo de dados/exportação do grafo
-├── grafo.cpp # Implementação das funções do grafo
-├── main.cpp # Arquivo principal com o menu interativo
-├── main.exe # Executável gerado (Windows)
-└── README.md
-
----
-
 ## 👨‍💻 Autor
 
 Desenvolvido por **Theo Linhares Mariano**  
