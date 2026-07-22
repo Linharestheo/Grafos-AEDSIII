@@ -1,0 +1,43 @@
+direcionado=nao
+20
+0 1 1 Belo Horizonte
+1 50 20 Uberlandia
+2 10 30 Uberaba
+3 12 50 Contagem
+4 15 70 Betim
+5 20 90 Passos
+6 25 11 Capelinha
+7 30 12 Vicosa
+8 35 15 Ipatinga
+9 40 20 Caratinga
+10 24 64 Timoteo
+11 85 12 Sete Lagoas
+12 65 37 Divinopolis
+13 33 56 Itabira
+14 98 23 Pouso Alegre
+15 34 14 Varginha
+16 29 83 Lavras
+17 20 23 Itajuba
+18 57 75 Ouro Preto
+19 28 82 Mariana
+20
+0 1 50
+0 19 43
+1 2 11
+2 3 12
+3 4 89
+4 5 14
+5 6 56
+6 7 13
+7 8 17
+8 9 64
+9 10 27
+10 11 72
+11 12 45
+12 13 92
+13 14 23
+14 15 39
+15 16 47
+16 17 14
+17 18 53
+18 19 34
