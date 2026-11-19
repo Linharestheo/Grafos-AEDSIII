@@ -9,21 +9,6 @@ Implementação de uma estrutura de dados de **grafos** em **C++**, usando **mat
 
 ---
 
-## 📑 Sumário
-
-- [Funcionalidades](#-funcionalidades)
-- [Algoritmos implementados](#-algoritmos-implementados)
-- [Estrutura do projeto](#-estrutura-do-projeto)
-- [Pré-requisitos](#-pré-requisitos)
-- [Como compilar e executar](#-como-compilar-e-executar)
-- [Formato do arquivo de entrada](#-formato-do-arquivo-de-entrada)
-- [Exemplo de uso](#-exemplo-de-uso)
-- [Detalhes de implementação](#-detalhes-de-implementação)
-- [Limitações conhecidas](#-limitações-conhecidas)
-- [Autor](#-autor)
-
----
-
 ## ⚙️ Funcionalidades
 
 - ✅ Criação do grafo **a partir de um arquivo** (`arq.txt`) ou **vazio**, com inserção manual
