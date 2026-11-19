@@ -79,8 +79,8 @@ Implementação de uma estrutura de dados de **grafos** em **C++**, usando **mat
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/<seu-usuario>/<nome-do-repositorio>.git
-cd <nome-do-repositorio>
+git clone https://github.com/Linharestheo/Grafos-AEDSIII.git
+cd Grafos-AEDSIII
 ```
 
 2. Compile:
