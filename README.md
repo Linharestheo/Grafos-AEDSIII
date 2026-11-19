@@ -1,57 +1,73 @@
-# 📊 Grafos - Trabalho de AEDSIII
+# 🕸️ Grafo em C++
 
-Implementação de uma estrutura de dados de **grafos** em **C++**, desenvolvida como trabalho da disciplina de Algoritmos e Estruturas de Dados III (AEDSIII).
+Implementação de um **TAD Grafo** com **matriz de adjacência ponderada** e menu interativo no console. Suporta grafos **direcionados** e **não direcionados**, importação/exportação por arquivo e os algoritmos clássicos **DFS, BFS, Prim e Dijkstra**.
 
----
+![C++](https://img.shields.io/badge/C%2B%2B-11%2B-00599C?logo=c%2B%2B&logoColor=white)
+![Plataforma](https://img.shields.io/badge/plataforma-Windows-0078D6?logo=windows&logoColor=white)
 
-## 📋 Descrição
+## ✨ Funcionalidades
 
-O projeto implementa um grafo com diversas operações clássicas, oferecendo uma interface interativa via terminal com menu de opções.
+- Criar grafo vazio ou **importar de arquivo `.txt`**
+- Inserir, remover e consultar arestas (individual ou em lote)
+- Editar **nome** e **coordenadas** dos vértices
+- Navegar pelos adjacentes (primeiro, próximo e lista completa)
+- Exibir a matriz de adjacência e contar arestas
+- **Exportar** o grafo para `saida.txt`
+- Algoritmos com passo a passo no console:
+  - **Busca em Profundidade (DFS)**: tempos de descoberta/término e antecessores
+  - **Busca em Largura (BFS)**: distâncias em arestas e antecessores
+  - **Prim**: árvore geradora mínima (grafos não direcionados)
+  - **Dijkstra**: caminho mínimo entre dois vértices, pelo nome
 
----
+## 📁 Estrutura
 
-## ⚙️ Funcionalidades
-
-| Opção | Descrição |
-|-------|-----------|
-| 0  | Sair |
-| 1  | Exibir todas as adjacências (Matriz) |
-| 2  | Consultar adjacente |
-| 3  | Inserir aresta |
-| 4  | Inserir arestas em conjunto |
-| 5  | Remover aresta |
-| 6  | Editar coordenada do vértice |
-| 7  | Primeiro adjacente do vértice |
-| 8  | Próximo adjacente do vértice |
-| 9  | Lista completa de adjacentes do vértice |
-| 10 | Contar arestas |
-| 11 | Exportar |
-| 12 | Editar nome do vértice |
-| 13 | Busca em profundidade (DFS) |
-| 14 | Busca em largura (BFS) |
-| 15 | Algoritmo de Prim |
-| 16 | Algoritmo de Dijkstra |
-
----
-
-## 🛠️ Tecnologias
-
-- **Linguagem:** C++
-- **Paradigma:** Estruturas de dados com grafos
-
----
-
-## 🚀 Como compilar e executar
-
-```bash
-g++ -o main grafo.cpp main.cpp
-./main
+```
+├── main.cpp    # menus e interação com o usuário
+├── grafo.cpp   # classe Grafo (estrutura de dados + algoritmos)
+├── arq.txt     # grafo de exemplo (20 cidades de MG)
+└── README.md
 ```
 
----
+## 🚀 Como executar
 
-## 👨‍💻 Autor
+Requer compilador C++ e **Windows** (usa `<windows.h>`, `system("cls")` e `Sleep()`).
 
-Desenvolvido por **Theo Linhares Mariano**  
-Curso: Bacharelado em Sistemas de Informação — IFMG Campus São João Evangelista  
-Disciplina: Algoritmos e Estruturas de Dados III
+```bash
+g++ main.cpp -o grafo.exe
+grafo.exe
+```
+
+> O `grafo.cpp` é incluído pelo `main.cpp`, então só o `main.cpp` é compilado. O `arq.txt` deve ficar na mesma pasta do executável.
+
+## 📄 Formato do arquivo
+
+```
+direcionado=nao          # ou direcionado=sim
+20                       # quantidade de vértices
+0 1 1 Belo Horizonte     # id  x  y  nome
+1 50 20 Uberlandia
+...
+20                       # quantidade de arestas
+0 1 50                   # origem  destino  peso
+0 19 43
+...
+```
+
+- Vértices indexados de `0` a `N-1`.
+- Pesos devem ser **positivos** (`0` na matriz = sem aresta).
+- Em grafos não direcionados, cada aresta aparece **uma vez** no arquivo.
+
+## ⏱️ Complexidade
+
+Com matriz de adjacência (`V` = nº de vértices): espaço `O(V²)`; consulta/inserção/remoção de aresta `O(1)`; DFS, BFS, Prim e Dijkstra `O(V²)`.
+
+## ⚠️ Limitações e melhorias futuras
+
+- Funciona apenas no Windows
+- Pesos inteiros e positivos
+- Prim e Dijkstra sem fila de prioridade (poderiam ser `O(E log V)`)
+- A função `mostrarGraficamente()` ainda não foi implementada
+
+## 👤 Autor
+
+Desenvolvido por **[Seu Nome]**, [Disciplina] — [Instituição].
