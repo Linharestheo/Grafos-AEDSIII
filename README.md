@@ -1,4 +1,4 @@
-# 📊 Grafos — Trabalho de AEDSIII
+# 📊 Grafos - Trabalho de AEDSIII
 
 Implementação de uma estrutura de dados de **grafos** em **C++**, desenvolvida como trabalho da disciplina de Algoritmos e Estruturas de Dados III (AEDSIII).
 
